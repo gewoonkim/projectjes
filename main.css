@@ -1,0 +1,45 @@
+header {
+    background-image: url(head.png);
+    text-align: center;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+body {
+ background-color: pink;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column {
+background-color: azure;
+  float: left;
+  font-family:fantasy;
+  width: 48%;
+  height: auto;
+  padding: 10px;
+  margin: 1%;
+  height: auto;/* Should be removed. Only for demonstration */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sticky {
+  width:100%;
+  padding:20px;
+  padding-bottom:16px;
+  background:grey;
+background-clip: border-box;
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+  text-align:center;
+  position:fixed;    /*Here's what sticks it*/
+  bottom:0;          /*to the bottom of the body*/
+  left:0;            /*and to the left of the body.*/
+}
